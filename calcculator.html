@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #be3fe4;
+      background:  #be3fe4;
       margin: 0;
       padding: 20px;
       color: #222;
@@ -59,7 +59,7 @@
     }
 
     button:hover {
-      background: #be41c4;
+      background:  #be3fe4;
     }
 
     .reset-btn {
@@ -128,7 +128,7 @@
   </section>
 
   <script>
-    // --- Quadratic Solver ---
+    // Reads numbers you typed for a,b,c from the input boxes and converts them into numbers
     function solveQuadratic() {
       const a = parseFloat(document.getElementById('a').value);
       const b = parseFloat(document.getElementById('b').value);
@@ -194,11 +194,11 @@
       const scoreError = document.getElementById('scoreError');
       const gradeResult = document.getElementById('gradeResult');
 
-      // Reset
+      // Reset to clear all quadratic fields and messages
       scoreError.textContent = "";
       gradeResult.textContent = "";
 
-      // Validation
+      // Validation section for grading system to show an error message when you type a letter instead of a number
       if (isNaN(score)) {
         scoreError.textContent = "Please enter a numeric score.";
         return;
@@ -229,3 +229,4 @@
   </script>
 </body>
 </html>
+
